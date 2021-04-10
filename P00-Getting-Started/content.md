@@ -31,7 +31,7 @@ By the end of this tutorial, you should know...
 Here's what we need to do to get this project up and running:
 
 1. Look at The Movie DB (TMDb) API
-1. Gett to know the current state of the project
+1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
 1. Handle network errors 

@@ -5,7 +5,7 @@ slug: The-Movie-DB-API
 
 1. **Look at The Movie DB (TMDb) API**
     1. **Review the JSON response to get a sense of what you'll be building**
-1. Gett to know the current state of the project
+1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
 1. Handle network errors 
