@@ -15,11 +15,14 @@ slug: configure-request
 1. Make the call 
 1. Display the data 
 
-Inside the struct, create a new method that will configure the request with the endpoint, parameters, method and body if applicable.
+# Configure Request
+
+Inside the `Request` struct in `Request.swift`, create a new method that will configure the request with the endpoint, parameters, method and body if applicable.
 
 ```Swift
 static func configureRequest(from route: Route, with parameters: [String: Any], and method: HTTPMethod, contains body: Data?) throws -> URLRequest {
 
+    // safely unwrap URL or return error 
     guard let url = URL(string: "https://api.themoviedb.org/3/\(route.rawValue)") else { fatalError("Error while unwrapping url")}
     var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
     request.httpMethod = method.rawValue
@@ -31,7 +34,7 @@ static func configureRequest(from route: Route, with parameters: [String: Any], 
 
 Do you see already how are you using the error enum?
 
-You are calling the method configureParametersAndHeaders that you didn't have yet. Add the following:
+You are calling the method `configureParametersAndHeaders` that you didn't have yet. Add the following:
 
 ```Swift
 static func configureParametersAndHeaders(parameters: [String: Any]?,
@@ -52,4 +55,12 @@ Here you try to encode both the parameters and headers, before making the call.
 
 Notice again how you are using the error enum.
 
-But you don't have an encoder yet, let's take care of that.
+But you don't have an encoder yet, let's take care of that in the next section.
+
+# Now Commit
+
+```bash
+$ git add .
+$ git commit -m 'Configure the Request'
+$ git push
+```

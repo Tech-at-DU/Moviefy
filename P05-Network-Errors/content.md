@@ -15,10 +15,12 @@ slug: Network-Errors
 1. Make the call 
 1. Display the data 
 
+# Error Handling
+
 Whenever there's an error in any step of the network call, we should be able to identify where it happened and as much information as possible.
 
 > [action]
->Create a new file and call it `NetworkError.swift`. Here you'll have an enum with all the possible errors.
+> Create a new file and call it `NetworkError.swift`. Here you'll have an enum with all the possible errors.
 >
 ```Swift
 public enum NetworkError: String, Error {
@@ -38,4 +40,12 @@ public enum NetworkError: String, Error {
     case success = "Success"
 
 }
+```
+
+# Now Commit
+
+```bash
+$ git add .
+$ git commit -m 'Handle network errors'
+$ git push
 ```

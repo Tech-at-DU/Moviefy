@@ -15,8 +15,10 @@ slug: HTTP-Methods-and-Routes
 1. Make the call 
 1. Display the data 
 
+# HTTP Methods and Routes 
+
 > [action]
-> Go back to Request.swift and add the following enums before the struct already there:
+> Go back to `Request.swift` and add the following enums before the existing struct:
 >
 ```Swift
 public enum HTTPMethod: String{  
@@ -37,3 +39,11 @@ public enum Route: String{
 ```
 
 This enum represents all the available endpoints you will be able to use.
+
+# Now Commit
+
+```bash
+$ git add .
+$ git commit -m 'Create HTTP methods and routes'
+$ git push
+```

@@ -15,8 +15,11 @@ slug: encoder
 1. Make the call 
 1. Display the data 
 
-Create a new file and call it Encoder
+# Encoder 
 
+>[action]
+> Create a new file and call it `Encoder.swift`
+>
 ```Swift
 public struct Encoder {
 
@@ -42,3 +45,11 @@ public struct Encoder {
 ```
 
 Can you figure out why we use inout parameters?
+
+# Now Commit
+
+```bash
+$ git add .
+$ git commit -m 'Create Encoder'
+$ git push
+```
