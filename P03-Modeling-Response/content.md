@@ -53,7 +53,7 @@ We know that we want to use the **Codable** protocol.
 > Locate the file `Movie.swift` 
 >
 > Type in the missing content so that your file looks like the following:
-
+>
 ```swift
 struct Movie {
     let id: Int
@@ -62,6 +62,7 @@ struct Movie {
     let releaseDate: String
 }
 
+// properties within a Movie returned from the API that we want to extract the info from
 extension Movie: Codable {
 
     enum MovieCodingKeys: String, CodingKey {
@@ -72,6 +73,7 @@ extension Movie: Codable {
     }
 
     init(from decoder: Decoder) throws {
+        // Decode each of the properties from the API into the appropriate type (string, etc.) for their associated struct variable
         let movieContainer = try decoder.container(keyedBy: MovieCodingKeys.self)
         id = try movieContainer.decode(Int.self, forKey: .id)
         posterPath = try movieContainer.decode(String.self, forKey: .posterPath)
@@ -82,6 +84,15 @@ extension Movie: Codable {
 ```
 
 In the extension, we have _encoded_ a value into data and can now this information from the API in our Swift project!
+
+# Coding Keys
+
+We defined **coding keys** to tell Swift exactly where to find the information to fill the model's variables. However, we actually only need this because the API uses a different naming convention for it's properties.
+
+Did you notice how `posterPath` and `releaseDate` needed to be reassigned to `"poster_path"` and  `"release_date"`. Why is that? 
+ 
+[Solution] It's because these two needed to be mapped since they're named differently on the API compared to our Movie struct in Xcode. Note how `"poster_path"` and  `"release_date"` are also the only variables that are set to a string. This is because in the JSON we receive from the request, these variables are named differently (using **snake_case**, rather than **camelCase** which is the recommended practice for Swift).
+
 
 # Handle Paginated Results 
 
@@ -132,4 +143,16 @@ extension MovieApiResponse: Codable {
         movies = try container.decode([Movie].self, forKey: .movies)
     }
 }
+```
+
+We just went through a lot of important stuff! We learned **how to use codable with JSON in our Swift models**, and also learned a bit more on **how to work with APIs** in order to get data flowing into our app!
+
+We can't get our data flowing just yet though, since we have don't have a way to interface with the API. To do so, we'll need a networking layer, so let's get to it!
+
+# Now Commit
+
+```bash
+$ git add .
+$ git commit -m 'Create codable model'
+$ git push
 ```

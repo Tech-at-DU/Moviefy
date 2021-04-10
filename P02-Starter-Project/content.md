@@ -20,9 +20,12 @@ slug: starter-project
 
 # Project Setup with Xcode
 
-Download the starter code [here](https://github.com/amelinagzz/moviefy-starter)
+> [action]
+> Download the starter code [here](https://github.com/amelinagzz/moviefy-starter)
+>
+> Open the project in Xcode and run the simulator to make sure it builds
 
-Currently the UI is built with Xib with very simple constraints. Feel free to run the app now and explore the UI but try to resist the temptation to make complex or good looking UI this early.
+Currently the UI is built with Xib with very simple constraints. Feel free to explore the UI but try to resist the temptation to make complex or good looking UI this early.
 
 The current file structure should look like the following:
 
@@ -69,7 +72,7 @@ From the image, _Now Trending_ is made from the `TitleCell` and each of the movi
 The project has a single `ViewController.swift` file whose content fills the main window. 
 
 > [info]
->A view controller acts as an intermediary between the views it manages and the data of your app. The methods and properties of the UIViewController class let you manage the visual presentation of your app. When you subclass UIViewController , you add any variables you need to manage your data in your subclass.
+> A view controller acts as an intermediary between the views it manages and the data of your app. The methods and properties of the UIViewController class let you manage the visual presentation of your app. When you subclass UIViewController , you add any variables you need to manage your data in your subclass.
 
 ## Library
 
