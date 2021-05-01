@@ -1,6 +1,6 @@
 ---
-title: "Getting to Know the Current State of the Project"
-slug: starter-project
+title: "Model The Response"
+slug: model-response
 ---
 
 1. Look at The Movie DB (TMDb) API
