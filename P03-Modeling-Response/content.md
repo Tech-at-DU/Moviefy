@@ -48,12 +48,13 @@ We know that we want to use the **Codable** protocol.
 > [info]
 > The **Codable** API enables us to leverage the compiler in order to generate much of the code needed to encode and decode data to/from a serialized format, like JSON (our data). **Codable** is actually a type alias that combines two protocols — Encodable and Decodable — into one.
 
+With this newfound information, lets move forward with implementing Codable into the project. 
 
 > [action]
 > Locate the file `Movie.swift` 
 >
 > Type in the missing content so that your file looks like the following:
->
+
 ```swift
 struct Movie {
     let id: Int
