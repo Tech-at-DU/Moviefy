@@ -25,6 +25,8 @@ By the end of this tutorial, you should know...
 1. How to decode JSON into Swift models.
 1. How to handle error and response.
 1. How to display data in custom UI.
+1. How to implement POST requests to authenticate the user using the third party authentication flow that TMDB's API has available.
+1. How to use Apple's AuthenticationServices API to handle URL schemes.
 
 # Technical Planning
 
@@ -34,13 +36,18 @@ Here's what we need to do to get this project up and running:
 1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
-1. Handle network errors 
+1. Handle network errors
 1. Create HTTP methods and routes
 1. Configure the request
-1. Implement Encoder 
+1. Implement Encoder
 1. Handle the response
-1. Make the call 
+1. Make the call
 1. Display the data 
+1. Additional Starter Challenge
+1. Preparing for Authentication
+1. Updating Routes and Models for Authentication
+1. Build out Authorization Flow
+1. Final Touches
 
 # What We're Building
 

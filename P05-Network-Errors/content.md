@@ -10,10 +10,15 @@ slug: Network-Errors
 1. **Handle network errors**
 1. Create HTTP methods and routes
 1. Configure the request
-1. Implement Encoder 
+1. Implement Encoder
 1. Handle the response
-1. Make the call 
+1. Make the call
 1. Display the data 
+1. Additional Starter Challenge
+1. Preparing for Authentication
+1. Updating Routes and Models for Authentication
+1. Build out Authorization Flow
+1. Final Touches
 
 # Error Handling
 

@@ -4,17 +4,21 @@ slug: The-Movie-DB-API
 ---
 
 1. **Look at The Movie DB (TMDb) API**
-    1. **Review the JSON response to get a sense of what you'll be building**
 1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
-1. Handle network errors 
+1. Handle network errors
 1. Create HTTP methods and routes
 1. Configure the request
-1. Implement Encoder 
+1. Implement Encoder
 1. Handle the response
-1. Make the call 
+1. Make the call
 1. Display the data 
+1. Additional Starter Challenge
+1. Preparing for Authentication
+1. Updating Routes and Models for Authentication
+1. Build out Authorization Flow
+1. Final Touches
 
 The Movie Database (TMDb) is a popular, user editable database for movies and TV shows. We'll be making it easier to discover the latest trending movies so that users are always up to date with the cinema. 
 

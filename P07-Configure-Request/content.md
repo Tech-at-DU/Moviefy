@@ -7,13 +7,18 @@ slug: configure-request
 1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
-1. Handle network errors
-1. Create HTTP methods and routes**
+1. Handle network errors 
+1. Create HTTP methods and routes
 1. **Configure the request**
-1. Implement Encoder 
+1. Implement Encoder
 1. Handle the response
-1. Make the call 
+1. Make the call
 1. Display the data 
+1. Additional Starter Challenge
+1. Preparing for Authentication
+1. Updating Routes and Models for Authentication
+1. Build out Authorization Flow
+1. Final Touches
 
 # Configure Request
 
