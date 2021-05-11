@@ -8,13 +8,13 @@ slug: Additionals
 1. Get to know the current state of the project
 1. Model the response
 1. Work with Swift API Client
-1. Handle network errors 
+1. Handle network errors
 1. Create HTTP methods and routes
 1. Configure the request
-1. Implement Encoder 
+1. Implement Encoder
 1. Handle the response
-1. Make the call 
-1. Display the data 
+1. Make the call
+1. Display the data
 1. **Additional Starter Challenge**
 1. Preparing for Authentication
 1. Updating Routes and Models for Authentication
@@ -25,13 +25,13 @@ Add a new section to the home page to display Upcoming Movies.
 
 Endpoint here.
 
-## Stretch Challenges 
+## Stretch Challenges
 
-We can get the base URL for images by calling the /configuration endpoint first. Create a new request to fetch those URLs. You will need the following type.
+We can get the base URL for images by calling the /configuration endpoint first. Create a new request to fetch those URLs. You can use somthing similar to the following struct.
 
 ```Swift
-struct MovieDBConfiguration : Model {
-    struct Images : Model {
+struct MovieDBConfiguration  {
+    struct Images {
         let baseUrl: URL
         let secureBaseUrl: URL
         let backdropSizes: [String]
@@ -45,4 +45,3 @@ struct MovieDBConfiguration : Model {
     static var current: MovieDBConfiguration?
 }
 ```
-
