@@ -1,6 +1,5 @@
 ---
-title: "Get Started."
-slug: getting-started
+# Get Started.
 ---
 
 Congratulations! You just got hired at a new firm. Your first assignment on the job is to create the initial version of an app that rates movies. As the firm grows, more iOS developers will join the team, so you've been asked to make the project easy to understand and scalable.
