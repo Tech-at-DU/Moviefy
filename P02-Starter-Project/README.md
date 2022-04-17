@@ -1,6 +1,5 @@
 ---
-title: "Getting to Know the Current State of the Project"
-slug: current-state
+# Getting to Know the Current State of the Project
 ---
 
 1. Look at The Movie DB (TMDb) API
