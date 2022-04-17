@@ -93,7 +93,7 @@ We defined **coding keys** to tell Swift exactly where to find the information t
 
 Did you notice how `posterPath` and `releaseDate` needed to be reassigned to `"poster_path"` and  `"release_date"`. Why is that? 
  
-[Solution] It's because these two needed to be mapped since they're named differently on the API compared to our Movie struct in Xcode. Note how `"poster_path"` and  `"release_date"` are also the only variables that are set to a string. This is because in the JSON we receive from the request, these variables are named differently (using **snake_case**, rather than **camelCase** which is the recommended practice for Swift).
+It's because these two needed to be mapped since they're named differently on the API compared to our Movie struct in Xcode. Note how `"poster_path"` and  `"release_date"` are also the only variables that are set to a string. This is because in the JSON we receive from the request, these variables are named differently (using **snake_case**, rather than **camelCase** which is the recommended practice for Swift).
 
 
 # Handle Paginated Results 
